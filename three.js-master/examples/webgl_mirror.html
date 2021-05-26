@@ -70,12 +70,7 @@
 				let geometry, material;
 
 				geometry = new THREE.CircleGeometry( 40, 64 );
-				groundMirror = new Reflector( geometry, {
-					clipBias: 0.003,
-					textureWidth: window.innerWidth * window.devicePixelRatio,
-					textureHeight: window.innerHeight * window.devicePixelRatio,
-					color: 0x777777
-				} );
+				groundMirror = new Reflector( geometry, {clipBias: 0.003,textureWidth: window.innerWidth * window.devicePixelRatio,	textureHeight: window.innerHeight * window.devicePixelRatio,color: 0x777777	} );
 				groundMirror.position.y = 0.5;
 				groundMirror.rotateX( - Math.PI / 2 );
 				scene.add( groundMirror );
